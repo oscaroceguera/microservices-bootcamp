@@ -9,4 +9,4 @@ server
   .use(bodyParser.json())
   .use('/graphql', graphqlExpress({ schema }))
   .use('/gq', graphiqlExpress({ endpointURL: '/graphql' }))
-  .listen(port, () => console.log('listening: ', port))
+  .listen(port, () => console.log('http://localhost:', port))
